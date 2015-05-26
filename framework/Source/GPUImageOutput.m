@@ -244,7 +244,7 @@ void reportAvailableMemoryForGPUImage(NSString *tag)
 
         [targetTextureIndices removeObjectAtIndex:indexOfObject];
         [targets removeObject:targetToRemove];
-        [targetToRemove endProcessing];
+        // [targetToRemove endProcessing]; 删除target不调用endProcessing，防止filter被暂时移除，却导致整个效果处理被停止。
     });
 }
 
