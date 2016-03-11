@@ -111,6 +111,11 @@ void dataProviderUnlockCallback (void *info, const void *data, size_t size);
     [self destroyFramebuffer];
 }
 
+- (CVPixelBufferRef)renderTargetBuffer
+{
+    return renderTarget;
+}
+
 #pragma mark -
 #pragma mark Internal
 
