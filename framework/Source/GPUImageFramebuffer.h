@@ -25,6 +25,8 @@ typedef struct GPUTextureOptions {
 
 @interface GPUImageFramebuffer : NSObject
 
+- (CVPixelBufferRef)renderTargetBuffer;
+
 @property(readonly) CGSize size;
 @property(readonly) GPUTextureOptions textureOptions;
 @property(readonly) GLuint texture;
