@@ -42,6 +42,7 @@ extern NSString *const kGPUImageColorSwizzlingFragmentShaderString;
 @property(nonatomic, copy) BOOL(^audioInputReadyCallback)(void);
 @property(nonatomic, copy) void(^audioProcessingCallback)(SInt16 **samplesRef, CMItemCount numSamplesInBuffer);
 @property(nonatomic) BOOL enabled;
+@property(nonatomic, assign) BOOL enabledVideo;
 @property(nonatomic, readonly) AVAssetWriter *assetWriter;
 @property(nonatomic, readonly) CMTime duration;
 @property(nonatomic, assign) CGAffineTransform transform;
